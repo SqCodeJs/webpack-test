@@ -1,9 +1,9 @@
 import './button.scss';
 
 export class Button {
-    render() {
+    render(text) {
         const btn = document.createElement('button');
-        btn.innerHTML = 'to jest przycisk';
+        btn.innerHTML = text;
         btn.onclick = () => console.log('klik');
         document.querySelector('body').appendChild(btn);
     }

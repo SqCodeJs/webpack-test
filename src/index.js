@@ -1,5 +1,6 @@
 import Photo from './bird.jpg'
-import { Button } from './components/buttons/button.js'
+import { Button } from './components/buttons/button.js';
+import { sharedFunction } from './components/shared/shared.js';
 
 const addImg = (img) => {
     console.log('i', img);
@@ -11,4 +12,6 @@ const addImg = (img) => {
 
 addImg(Photo);
 const btn = new Button();
-btn.render();
+btn.render('test1');
+
+sharedFunction();
